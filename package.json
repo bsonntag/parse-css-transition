@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Parse CSS transitions",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": "git@github.com:bsonntag/parse-css-transition.git",
   "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
   "license": "MIT",
