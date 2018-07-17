@@ -4,7 +4,7 @@ function toMillies(value) {
     return;
   }
 
-  const isMillies = value.endsWith('ms');
+  var isMillies = value.endsWith('ms');
 
   return parseFloat(value) * (isMillies ? 1 : 1000);
 }
