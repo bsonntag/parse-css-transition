@@ -9,17 +9,10 @@
   "scripts": {
     "bundle": "babel src --out-dir dist --delete-dir-on-start --ignore \"**/*.test.js\"",
     "bundle:watch": "babel src --out-dir dist --watch --delete-dir-on-start --ignore \"**/*.test.js\"",
+    "lint": "eslint .",
     "test": "BABEL_ENV=test jest",
     "test:watch": "BABEL_ENV=test jest --watch --notify",
     "version": "npm run bundle && git add dist"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "jest": "^23.6.0"
   },
   "jest": {
     "coverageDirectory": "coverage",
@@ -28,5 +21,15 @@
       "lcov",
       "text"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.7.0",
+    "eslint-config-seegno": "^11.0.1",
+    "jest": "^23.6.0"
   }
 }
