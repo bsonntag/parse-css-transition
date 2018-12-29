@@ -1,6 +1,6 @@
 {
   "name": "parse-css-transition",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Parse CSS transitions",
   "repository": "git@github.com:bsonntag/parse-css-transition.git",
   "license": "MIT",
