@@ -5,7 +5,7 @@
   "repository": "git@github.com:bsonntag/parse-css-transition.git",
   "license": "MIT",
   "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "bundle": "babel src --out-dir dist --delete-dir-on-start --ignore \"**/*.test.js\"",
     "bundle:watch": "babel src --out-dir dist --watch --delete-dir-on-start --ignore \"**/*.test.js\"",
