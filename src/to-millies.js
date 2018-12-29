@@ -9,4 +9,4 @@ function toMillies(value) {
   return parseFloat(value) * (isMillies ? 1 : 1000);
 }
 
-module.exports = toMillies;
+export default toMillies;

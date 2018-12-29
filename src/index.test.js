@@ -1,4 +1,4 @@
-const parseCssTransition = require('.');
+import parseCssTransition from '.';
 
 describe('parseCssTransition(transition)', () => {
   it('parses a single transition with only the required properties', () => {

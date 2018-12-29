@@ -1,4 +1,4 @@
-const toMillies = require('./to-millies');
+import toMillies from './to-millies';
 
 describe('toMillies(value)', () => {
   it('returns a number', () => {

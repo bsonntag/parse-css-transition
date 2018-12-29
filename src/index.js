@@ -1,4 +1,4 @@
-const toMillies = require('./to-millies');
+import toMillies from './to-millies';
 
 function isTime(value) {
   return /^-?(0?\.)?\d+m?s$/.test(value);
@@ -10,8 +10,7 @@ function parseSingleTransition(transition) {
     duration,
     timingFunctionOrDelay,
     delay,
-  ] = transition
-    .split(/\s+/)
+  ] = transition.split(/\s+/);
 
   if (isTime(timingFunctionOrDelay)) {
     return {
@@ -37,4 +36,4 @@ function parseCssTransition(transition) {
     .map(parseSingleTransition);
 }
 
-module.exports = parseCssTransition;
+export default parseCssTransition;

@@ -2,14 +2,31 @@
   "name": "parse-css-transition",
   "version": "0.0.1",
   "description": "Parse CSS transitions",
+  "repository": "git@github.com:bsonntag/parse-css-transition.git",
+  "license": "MIT",
+  "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "bundle": "babel src --out-dir dist --delete-dir-on-start --ignore \"**/*.test.js\"",
+    "bundle:watch": "babel src --out-dir dist --watch --delete-dir-on-start --ignore \"**/*.test.js\"",
+    "test": "BABEL_ENV=test jest",
+    "test:watch": "BABEL_ENV=test jest --watch --notify",
+    "version": "npm run bundle && git add dist"
   },
-  "repository": "git@github.com:bsonntag/parse-css-transition.git",
-  "author": "Benjamim Sonntag <benjamimsonntag@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
-    "jest": "^20.0.4"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "html",
+      "lcov",
+      "text"
+    ]
   }
 }
