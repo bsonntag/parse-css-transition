@@ -1,5 +1,6 @@
+.*.js
 .babelrc
-.cache
-.eslintrc.js
+.circleci
+.eslintignore
 coverage
 src
