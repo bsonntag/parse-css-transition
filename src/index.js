@@ -5,12 +5,9 @@ function isTime(value) {
 }
 
 function parseSingleTransition(transition) {
-  const [
-    name,
-    duration,
-    timingFunctionOrDelay,
-    delay,
-  ] = transition.split(/\s+/);
+  const [name, duration, timingFunctionOrDelay, delay] = transition.split(
+    /\s+/
+  );
 
   if (isTime(timingFunctionOrDelay)) {
     return {
@@ -31,8 +28,8 @@ function parseSingleTransition(transition) {
 function parseCssTransition(transition) {
   return transition
     .split(',')
-    .map(value => value.trim())
-    .filter(value => value.length > 0)
+    .map((value) => value.trim())
+    .filter((value) => value.length > 0)
     .map(parseSingleTransition);
 }
 

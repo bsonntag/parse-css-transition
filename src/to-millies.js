@@ -1,4 +1,3 @@
-
 function toMillies(value) {
   if (!value) {
     return;
